@@ -11,11 +11,11 @@ function calculate() {
 
     document.getElementById('resultado').innerHTML = `
         <h3>Lista de Produtos</h3>
-        <span style="font-size: 15px;">Carne Bovina: <strong style="font-size:16px;">${carneBovina}g</strong></span>
-        <span style="font-size: 15px;">Frango: <strong style="font-size: 16px;">${frango}g</strong></span>
-        <span style="font-size: 15px;">Linguiça: <strong style="font-size: 16px;">${linguica}g</strong></span>
-        <span style="font-size: 15px;">Refrigerante: <strong style="font-size: 16px;">${refrigerante}ml</strong></span>
-        <span style="font-size: 15px;">Cerveja: <strong style="font-size: 16px;">${cerveja}ml</strong></span>
+        <span>Carne Bovina: <strong>${carneBovina}g</strong></span>
+        <span>Frango: <strong>${frango}g</strong></span>
+        <span>Linguiça: <strong>${linguica}g</strong></span>
+        <span>Refrigerante: <strong>${refrigerante}ml</strong></span>
+        <span>Cerveja: <strong>${cerveja}ml</strong></span>
     `;
 }
 
