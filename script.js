@@ -9,7 +9,7 @@ function calculate() {
     const refrigerante = (homens * 300) + (mulheres * 400) + (criancas * 200);
     const cerveja = (homens * 800) + (mulheres * 500);
 
-    document.getElementById('resultado').innerHTML = `
+    document.getElementById('result').innerHTML = `
         <h3>Lista de Produtos</h3>
         <span>Carne Bovina: <strong>${carneBovina}g</strong></span>
         <span>Frango: <strong>${frango}g</strong></span>
@@ -25,5 +25,5 @@ function clearList() {
         input.value = ''
     });
 
-    document.getElementById("resultado").innerHTML = ''
+    document.getElementById("result").innerHTML = ''
 }
