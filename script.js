@@ -1,4 +1,4 @@
-function calcular() {
+function calculate() {
     const homens = parseInt(document.getElementById('homens').value) || 0;
     const mulheres = parseInt(document.getElementById('mulheres').value) || 0;
     const criancas = parseInt(document.getElementById('criancas').value) || 0;
