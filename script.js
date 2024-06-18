@@ -18,21 +18,23 @@ function calculate() {
     const cerveja = (homens * 800) + (mulheres * 500);
     const cervejaFormatada = cerveja < 1000 ? `${cerveja}ml` : `${cerveja / 1000} litros`
 
+         document.getElementById("result").style.display = "block"
+
         document.getElementById('result').innerHTML = `
         <h3>Lista de Produtos</h3>
-        <span>Carne Bovina: <strong>${carneBovinaFormatada}</strong></span>
-        <span>Frango: <strong>${frangoFormatada}</strong></span>
-        <span>Linguiça: <strong>${linguicaFormatada}</strong></span>
-        <span>Refrigerante: <strong>${refrigeranteFormatado}</strong></span>
-        <span>Cerveja: <strong>${cervejaFormatada}</strong></span>
+        <p>Carne Bovina: <strong>${carneBovinaFormatada}</strong></p>
+        <p>Frango: <strong>${frangoFormatada}</strong></p>
+        <p>Linguiça: <strong>${linguicaFormatada}</strong></p>
+        <p>Refrigerante: <strong>${refrigeranteFormatado}</strong></p>
+        <p>Cerveja: <strong>${cervejaFormatada}</strong></p>
     `;
 }
 
 function clearList() {
-    const inputs = document.querySelectorAll(".input-group input");
+    const inputs = document.querySelectorAll(".input-group input")
     inputs.forEach((input) => {
         input.value = ''
     });
 
-    document.getElementById("result").innerHTML = ''
+    document.getElementById("result").style.display = "none"
 }

@@ -77,7 +77,7 @@ button:hover {
     transition: 0.5s;
 }
 
-span {
+p {
     font-family: -apple-system, sans-serif;;
     font-size: 0.95rem;
 }
@@ -97,6 +97,7 @@ h3 {
 .result {
     display: flex;
     flex-direction: column;
+    display: none;
     background-color: rgba(128, 128, 128, 0.103);
     margin-top: 0.5rem;
     padding: 1rem;
